@@ -1,0 +1,104 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Admin application",
+            "program": "${workspaceRoot}\\spirit.io-admin-application\\admin.js",
+            "cwd": "${workspaceRoot}",
+            "outFiles": [
+                "${workspaceRoot}\\spirit.io*\\lib\\**\\*.js"
+            ],
+            "sourceMaps": true,
+            "preLaunchTask": "Compile spirit.io-admin-application"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Sample application",
+            "program": "${workspaceRoot}\\spirit.io-sample-application\\sample.js",
+            "cwd": "${workspaceRoot}",
+            "outFiles": [
+                "${workspaceRoot}\\spirit.io-sample-application\\lib\\**\\*.js"
+            ],
+            "sourceMaps": true,
+            "preLaunchTask": "Compile spirit.io-sample-application"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "spirit.io tests",
+            "program": "${workspaceRoot}/spirit.io/node_modules/mocha/bin/_mocha",
+            "cwd": "${workspaceRoot}/spirit.io",
+            "args": [
+                "--no-timeouts",
+                "--opts",
+                "mocha.opts"
+            ],
+            "outFiles": [
+                "${workspaceRoot}\\spirit.io*\\lib\\**\\*.js",
+                "${workspaceRoot}\\spirit.io*\\test\\**\\*.js"
+            ],
+            "sourceMaps": true,
+            "preLaunchTask": "Compile spirit.io"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "mongo connector tests",
+            "program": "${workspaceRoot}/spirit.io-mongodb-connector/node_modules/mocha/bin/_mocha",
+            "cwd": "${workspaceRoot}/spirit.io-mongodb-connector",
+            "args": [
+                "--no-timeouts",
+                "--opts",
+                "mocha.opts"
+            ],
+            "outFiles": [
+                "${workspaceRoot}\\spirit.io*\\lib\\**\\*.js",
+                "${workspaceRoot}\\spirit.io*\\test\\**\\*.js"
+            ],
+            "sourceMaps": true,
+            "preLaunchTask": "Compile spirit.io-mongodb-connector"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "redis connector tests",
+            "program": "${workspaceRoot}/spirit.io-redis-connector/node_modules/mocha/bin/_mocha",
+            "cwd": "${workspaceRoot}/spirit.io-redis-connector",
+            "args": [
+                "--no-timeouts",
+                "--opts",
+                "mocha.opts"
+            ],
+            "outFiles": [
+                "${workspaceRoot}\\spirit.io*\\lib\\**\\*.js",
+                "${workspaceRoot}\\spirit.io*\\test\\**\\*.js"
+            ],
+            "sourceMaps": true,
+            "preLaunchTask": "Compile spirit.io-redis-connector"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "admin test",
+            "program": "${workspaceRoot}/spirit.io-admin-application/node_modules/mocha/bin/_mocha",
+            "cwd": "${workspaceRoot}/spirit.io-admin-application",
+            "args": [
+                "--no-timeouts",
+                "--opts",
+                "mocha.opts"
+            ],
+            "outFiles": [
+                "${workspaceRoot}\\spirit.io*\\lib\\**\\*.js",
+                "${workspaceRoot}\\spirit.io*\\test\\**\\*.js"
+            ],
+            "sourceMaps": true,
+            "preLaunchTask": "Compile spirit.io-admin-application"
+        }
+    ]
+}
