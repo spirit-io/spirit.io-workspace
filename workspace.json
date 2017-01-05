@@ -1,0 +1,21 @@
+{
+    "repositories": {
+        "default": {
+            "spirit.io": "https://github.com/spirit-io/spirit.io.git"
+        },
+        "connectors": {
+            "spirit.io-mongodb-connector": "https://github.com/spirit-io/spirit.io-mongodb-connector.git",
+            "spirit.io-redis-connector": "https://github.com/spirit-io/spirit.io-redis-connector.git"
+        },
+        "applications": {
+            "spirit.io-admin-application": "https://github.com/spirit-io/spirit.io-admin-application.git",
+            "spirit.io-sample-application": "https://github.com/spirit-io/spirit.io-sample-application.git"
+        }
+    },
+    "links": {
+        "spirit.io": "spirit.io",
+        "spirit.io-mongodb-connector": "spirit.io-mongodb-connector",
+        "spirit.io-redis-connector": "spirit.io-redis-connector",
+        "spirit.io-admin-application": "spirit.io-admin-application"
+    }
+}

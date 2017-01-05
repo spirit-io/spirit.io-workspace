@@ -1,0 +1,8 @@
+{
+  "name": "spirit.io-workspace",
+  "version": "1.0.0",
+  "description": "Development workspace",
+  "main": "index.js",
+  "author": "Teddy Chambard",
+  "license": "MIT"
+}
